@@ -24,7 +24,10 @@ object Repository {
 
             override fun onResponse(call: Call<Model>, response: Response<Model>) {
                 val model = response.body()
-                url.value = model?.url
+                if (model?.url == null)
+                    url.value = "noUrl"
+                else
+                    url.value = model.url
 
             }
         })

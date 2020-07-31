@@ -7,7 +7,6 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import androidx.navigation.fragment.findNavController
 import com.lesson.skillbox.testtaskapplication.R
-import com.lesson.skillbox.testtaskapplication.StartingFragmentDirections
 import com.lesson.skillbox.testtaskapplication.viewmodels.StartingFragmentViewModel
 
 class StartingFragment : BaseFragment(R.layout.fragment_starting) {
