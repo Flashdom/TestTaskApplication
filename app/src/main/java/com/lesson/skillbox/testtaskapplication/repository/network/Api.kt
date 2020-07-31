@@ -1,5 +1,6 @@
-package com.lesson.skillbox.testtaskapplication
+package com.lesson.skillbox.testtaskapplication.repository.network
 
+import com.lesson.skillbox.testtaskapplication.repository.network.models.Model
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

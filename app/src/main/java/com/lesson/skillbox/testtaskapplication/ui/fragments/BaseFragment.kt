@@ -1,4 +1,4 @@
-package com.lesson.skillbox.testtaskapplication
+package com.lesson.skillbox.testtaskapplication.ui.fragments
 
 import android.content.Context
 import android.net.ConnectivityManager
@@ -7,6 +7,7 @@ import android.net.NetworkCapabilities
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
+import com.lesson.skillbox.testtaskapplication.R
 
 open class BaseFragment(@LayoutRes contentLayoutId: Int) : Fragment(contentLayoutId) {
 

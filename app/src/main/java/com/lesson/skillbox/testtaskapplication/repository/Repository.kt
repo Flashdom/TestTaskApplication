@@ -1,7 +1,9 @@
-package com.lesson.skillbox.testtaskapplication
+package com.lesson.skillbox.testtaskapplication.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.lesson.skillbox.testtaskapplication.repository.network.Api
+import com.lesson.skillbox.testtaskapplication.repository.network.models.Model
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -9,7 +11,8 @@ import retrofit2.Response
 
 object Repository {
 
-    private val api = Api.create()
+    private val api =
+        Api.create()
     private val url = MutableLiveData<String>()
 
     fun getData() {

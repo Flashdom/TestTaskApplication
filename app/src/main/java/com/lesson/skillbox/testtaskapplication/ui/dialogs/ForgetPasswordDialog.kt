@@ -1,10 +1,11 @@
-package com.lesson.skillbox.testtaskapplication
+package com.lesson.skillbox.testtaskapplication.ui.dialogs
 
 import android.app.Dialog
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
+import com.lesson.skillbox.testtaskapplication.R
 
 class ForgetPasswordDialog : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {

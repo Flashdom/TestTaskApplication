@@ -1,4 +1,4 @@
-package com.lesson.skillbox.testtaskapplication
+package com.lesson.skillbox.testtaskapplication.ui.fragments
 
 import android.app.Activity.RESULT_OK
 import android.content.ActivityNotFoundException
@@ -8,6 +8,8 @@ import android.os.Bundle
 import android.view.KeyEvent
 import android.webkit.*
 import androidx.navigation.fragment.navArgs
+import com.lesson.skillbox.testtaskapplication.R
+import com.lesson.skillbox.testtaskapplication.WebViewFragmentArgs
 import kotlinx.android.synthetic.main.fragment_web_view.*
 
 

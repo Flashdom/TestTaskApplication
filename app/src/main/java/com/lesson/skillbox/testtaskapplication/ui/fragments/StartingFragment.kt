@@ -1,4 +1,4 @@
-package com.lesson.skillbox.testtaskapplication
+package com.lesson.skillbox.testtaskapplication.ui.fragments
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -6,6 +6,9 @@ import android.os.Bundle
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.observe
 import androidx.navigation.fragment.findNavController
+import com.lesson.skillbox.testtaskapplication.R
+import com.lesson.skillbox.testtaskapplication.StartingFragmentDirections
+import com.lesson.skillbox.testtaskapplication.viewmodels.StartingFragmentViewModel
 
 class StartingFragment : BaseFragment(R.layout.fragment_starting) {
 
@@ -23,7 +26,10 @@ class StartingFragment : BaseFragment(R.layout.fragment_starting) {
                 findNavController().navigate(action)
             }
             else -> {
-                val action = StartingFragmentDirections.actionStartingFragmentToWebViewFragment(tmp)
+                val action =
+                    StartingFragmentDirections.actionStartingFragmentToWebViewFragment(
+                        tmp
+                    )
                 findNavController().navigate(action)
 
             }
@@ -40,7 +46,10 @@ class StartingFragment : BaseFragment(R.layout.fragment_starting) {
         {
             if (it != "noUrl") {
                 sharedPreferences.edit().putString("url", it).apply()
-                val action = StartingFragmentDirections.actionStartingFragmentToWebViewFragment(it)
+                val action =
+                    StartingFragmentDirections.actionStartingFragmentToWebViewFragment(
+                        it
+                    )
                 findNavController().navigate(action)
             } else {
                 sharedPreferences.edit().putString("url", "noUrl").apply()
